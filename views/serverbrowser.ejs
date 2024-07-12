@@ -1,0 +1,33 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Server Browser</title>
+  <meta name="description" content="Servers">
+  <meta name="author" content="SitePoint">
+
+</head>
+
+<body>
+    <a href = '/' > Return</a>
+<h1>Server Browser </h1>
+<h2>Display Servers here for account x</h2>
+<ul class="quotes">
+    <% for(var i=0; i<quotes.length; i++) {%>
+      <li class="quote">
+       <a <%= "href = /chat?id="+quotes[i].servername %>> <span><%= quotes[i].servername %></span></a>
+      </li>
+    <% } %>
+  </ul>
+<h3><a href = '/addserver'>+ Create New Server</a></h3>
+<div class = "name">
+  <a href = "/"> <span><%= user_id %></span></a>
+</div>
+</body>
+</html>
+
+
+
+

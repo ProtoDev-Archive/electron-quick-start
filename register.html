@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>protoTeam</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  </head>
+
+  <body class="text-center container" style = "background-color:#151515;color:white;background-image: url('http://i65.tinypic.com/2hpm52h.png');background-repeat: no-repeat;background-size:auto">
+    <form class="form-signin" method = "POST" action = "/submit" style = "margin-top:10%;padding:15%">
+      <h1 class="h3 mb-3 font-weight-normal">Create an account</h1>
+
+      <label for="inputFirstname" class="sr-only">Firstname</label>
+      <input name = "firtsname" style = "margin-bottom:10%" type="firstname" id="inputFirstname" class="form-control" placeholder="Firstname" required autofocus>
+      
+      <label for="inputLastname" class="sr-only">Lastname</label>
+      <input name = "lastname" style = "margin-bottom:10%" type="lastname" id="inputLastname" class="form-control" placeholder="Lastname" required autofocus>
+
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input name = "email" style = "margin-bottom:10%" type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+
+      <label for="inputUsername" class="sr-only">Username</label>
+      <input name = "username" style = "margin-bottom:10%" type="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
+
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input name = "password" style = "margin-bottom:10%" type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      
+      <label for="inputpasswordConf" class="sr-only">Confirm Password</label>
+      <input name = "passwordConf" style = "margin-bottom:10%" type="password" id="inputpasswordConf" class="form-control" placeholder="Confirm password" required>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit" style = "background-color:orange;border:none">Register</button>
+    </form>
+    <a href = "/login" style = "color:white;text-decoration:none">Already have an account?</a>
+    <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
+  </body>
+</html>
